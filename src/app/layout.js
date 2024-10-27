@@ -3,8 +3,10 @@ import "./globals.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import NextTopLoader from 'nextjs-toploader';
+import Loading from "./components/Loading"
 
 import { StateContext } from "./Context/StateContext";
+
 
 
 
@@ -28,6 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
+        <Loading>
       <StateContext> 
       <NextTopLoader 
       />
@@ -35,6 +38,7 @@ export default function RootLayout({ children }) {
             {children}
             <Footer/>
         </StateContext>
+        </Loading>
       </body>
     </html>
   );

@@ -34,9 +34,17 @@ const SampleProject = () => {
           slidesToShow: 1, // Show 1 slide
           slidesToScroll: 1,
         },
+        
+
+        
+        
+
+        
 
         
       },
+
+      
       
     ],
   };
