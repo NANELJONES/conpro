@@ -6,7 +6,7 @@ import { useStateContext } from "../Context/StateContext";
 import Layout1 from "../layout/Layout1";
 import Modal from "../components/Modal";
 
-const GalleryPage = () => {
+const Page = () => {
   const { gallery, fetchGallery ,set_url, set_show_modal,show_modal} = useStateContext();
   
 
@@ -86,4 +86,4 @@ const GalleryPage = () => {
   );
 };
 
-export default GalleryPage;
+export default Page;

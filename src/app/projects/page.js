@@ -11,10 +11,9 @@ import { getProjects } from '../lib'
 import { StateContext } from '../Context/StateContext'
 import { useStateContext } from '../Context/StateContext'
 
-const page = () => {
+const Page = () => {
   const {all_projects} = useStateContext();
  
-  
   
 
 
@@ -58,9 +57,9 @@ const page = () => {
         <div className="flex p-10 md:p-20 items-center justify-around flex-wrap gap-4 relative">
           {all_projects.map((each_project, index) => {
             return (
-              <Link href= {`/projects/${each_project?.node?.slug}`}>
+              <Link   key={index}  href= {`/projects/${each_project?.node?.slug}`}>
               <motion.div 
-                key={index} 
+              
                 className="w-auto h-auto"
                 initial={{ opacity: 0, y: -70 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -97,5 +96,5 @@ const page = () => {
 };
 
 
-export default page;
+export default Page;
 
