@@ -53,10 +53,11 @@ const Header = () => {
         <div className='w-full mt-2 md:mt-0 h-[10em]  md:w-[10em] md:h-[8em]  lg:w-[11em] lg:h-[11em] text-primary_color    p-[1em] justify-around flex flex-col items-center bg-third_gradient rounded-[20px]  md:absolute md:top-[6vw]  md:right-[5vw]'>
                     
                   
-                    <h6 className='nice_text font-[300]'>The best real estate contractors in Ghana and africa as a whole</h6>
-                  
+                    <h6 className='nice_text font-[300] hidden  md:block'> The Best Consulting Civil Service & Cost Engineers </h6>
+                    <h5 className=' font-[300] md:hidden'>We Offer Outstanding Consulting Services And Precise Cost Engineering Solutions, Ensuring Your Success Through Comprehensive Civil Consulting And Meticulous Project Cost Management.</h5>
+                    
                   <div className='flex flex-row  items-center justify-between w-full '>
-                      <img src="/geng.png" className='h-[2em] md:- lg:h-[2em] '></img>
+                      <img src="/Geng.png" className='h-[2em] md:- lg:h-[2em] '></img>
                         <img src="/circle_arrow.svg" className='h-[1.5em]'></img>
                         
                    </div> 

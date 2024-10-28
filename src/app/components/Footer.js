@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <div  className='w-full flex flex-col items-center justify-between  mt-10   md:max-h-[1000px] md:py-20 bg-primary_color'>
+    <div  className='w-full flex flex-col items-center justify-between  mt-2 md:mt-[20px]   md:max-h-[1000px] md:py-20 bg-primary_color'>
 
     <Layout1>
     <h2 className='text-white text-center w-full   md:text-left'>{`Let's`} <br/>Connect</h2>
@@ -26,12 +26,25 @@ const Footer = () => {
                 
 
                   {/*Location  */}
-                <span  className='flex flex-col md:flex-row  items-center gap-2 md:gap-5 '>  <img src='/circle_arrow.svg' className='w-[30px]'></img> <p className='text-white text-center md:text-left'>BAC 52, 3rd Street, Baatsonaa, Tema.
+                <span  className='flex flex-col md:flex-row  items-center gap-2 md:gap-5 '>  <img src='/location.svg' className='w-[30px]'></img> <p className='text-white text-center md:text-left'>BAC 52, 3rd Street, Baatsonaa, Tema.
                 <br/>   Plot 86 block E, Daban, Kumasi</p> </span>
-                <span  className='flex flex-col md:flex-row  items-center gap-2 md:gap-5'>  <img src='/circle_arrow.svg' className='w-[30px]'></img> <p className='text-white'>(233) 20 211 4432</p> </span>
-                <span  className='flex flex-col md:flex-row  items-center gap-2 md:gap-5'>  <img src='/circle_arrow.svg' className='w-[30px]'></img> <p className='text-white'>024 432 8880</p> </span>
-                <span  className='flex flex-col md:flex-row  items-center gap-2 md:gap-5'>  <img src='/circle_arrow.svg' className='w-[30px]'></img> <p className='text-white'>024 858 5116</p> </span>
-                <span  className='flex flex-col md:flex-row  items-center gap-2 md:gap-5'>  <img src='/circle_arrow.svg' className='w-[30px]'></img> <p className='text-white'>info@conprolimited.com</p> </span>
+                <br/> 
+                <span  className='flex flex-col md:flex-row  items-center gap-2 md:gap-5'>
+
+                <img src='/phone.svg' className='w-[30px]'></img>
+
+                  <span className='flex flex-col  items-center md:items-start'>
+
+                  <p className='text-white '>(233) 20 211 4432</p> 
+                 <p className='text-white'>024 432 8880</p> 
+                 <p className='text-white'>024 858 5116</p> 
+
+                  </span>
+                
+                
+                </span>
+                <br/> 
+                <span  className='flex flex-col md:flex-row  items-center gap-2 md:gap-5'>  <img src='/email.svg' className='w-[30px]'></img> <p className='text-white'>info@conprolimited.com</p> </span>
               
               </div>
 
@@ -51,11 +64,11 @@ const Footer = () => {
       </div>
       <br/>
       <div className='normal_div'>
-          <Link href={"#"}> <h6 className='text-white border-l-4 px-2'>Our Company</h6></Link>
-          <Link href={"/services"}> <h6 className='text-white border-l-4 px-2'>Our Services</h6></Link>
-          <Link href={"/projects"}> <h6 className='text-white border-l-4 px-2'>Projects</h6></Link>
-          <Link href={"/aboutUs"}> <h6 className='text-white border-l-4 px-2'>About Us</h6></Link>
-          <Link href={"/contactUs"}> <h6 className='text-white border-l-4 px-2'>Contact Us</h6></Link>
+          <Link href={"#"}> <h6 className='text-white border-b-2 md:border-l-4 p-2'>Our Company</h6></Link>
+          <Link href={"/services"}> <h6 className='text-white border-b-2 md:border-l-4 p-2 w-full'>Our Services</h6></Link>
+          <Link href={"/projects"}> <h6 className='text-white border-b-2 md:border-l-4 p-2'>Projects</h6></Link>
+          <Link href={"/aboutUs"}> <h6 className='text-white border-b-2 md:border-l-4 p-2'>About Us</h6></Link>
+          <Link href={"/contactUs"}> <h6 className='text-white border-b-2 md:border-l-4 p-2'>Contact Us</h6></Link>
 
       </div>
 

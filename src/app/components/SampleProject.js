@@ -31,7 +31,7 @@ const SampleProject = () => {
       {
         breakpoint: 768, // For small screens
         settings: {
-          slidesToShow: 1, // Show 1 slide
+          slidesToShow: 2, // Show 1 slide
           slidesToScroll: 1,
         },
         
@@ -72,7 +72,7 @@ const SampleProject = () => {
           {all_projects.map((each_project, index) => (
             <Link key={index}  href= {`/projects/${each_project?.node?.slug}`} >
             <div className=' md:p-10  '>
-              <div className='relative w-[15em] h-[15em]          md:w-[25em]  md:h-[25em]   md:max-w-[400]  md:max-h-[400px]'>
+              <div className='relative w-[10em] h-[10em]          md:w-[18em]  md:h-[18em]   md:max-w-[400]  md:max-h-[400px]'>
                 <Image
                   alt='Project Image'
                   src={each_project?.node.projectImages[0].url}
@@ -80,7 +80,7 @@ const SampleProject = () => {
                   fill={true}
                 />
               </div>
-              <h5 className='w-full  text-white text-left'>{each_project?.node?.projectName}</h5>
+              <h6 className='w-full  text-white text-left'>{each_project?.node?.projectName}</h6>
               <p className='w-full border-l-4 border-white px-2 text-white text-left font-italic'>{each_project?.node?.projectStatus}</p>
             </div>
             </Link>

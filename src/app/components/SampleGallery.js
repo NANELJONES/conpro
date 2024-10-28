@@ -29,7 +29,7 @@ const SampleGallery = () => {
             initial={{ opacity: 0, y: -70 }}
             whileInView={{ opacity: 1, y: -30 }}
             transition={{ duration: 1, delay: index / 10 + 0.4  }}
-            className={`w-[15em] relative border rounded-2xl lg:w-[40%] h-[30em] md:h-[45em] lg:w-[20em] max-w-[250px] max-h-[350px] ${
+            className={`w-[13em] relative border rounded-2xl lg:w-[40%] h-[16em] md:h-[45em] lg:w-[20em] max-w-[250px] max-h-[350px] ${
               index % 2 === 0 ? "mt-20" : "mt-0"
             }`}
 

@@ -60,7 +60,7 @@ const ContactPage = () => {
       {/* Toast Container (only one instance needed) */}
       <ToastContainer />
 
-      <div className="relative layout p-5 md:p-20">
+      <div className="relative layout  md:p-20">
         {/* Background Image */}
         <div className=" hidden md:block md:absolute md:top-[10em] w-[40em] max-w-[400px] max-h-[500px] h-[60em] z-0">
           <Image

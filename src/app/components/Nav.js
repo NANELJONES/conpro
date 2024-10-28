@@ -24,7 +24,7 @@ const Nav = () => {
         alt="menu"
         width={30}
         height={30}
-        className="absolute top-4 left-4 md:hidden bg-secondary_color p-2 rounded-sm cursor-pointer"
+        className="absolute top-4 left-4 md:hidden bg-secondary_color p-2 rounded-sm z-[200] cursor-pointer"
         onClick={() => set_show_nav(!show_nav)}
       />
 
@@ -32,7 +32,7 @@ const Nav = () => {
       <div
         className={`${
           show_nav ? "block pt-20" : "hidden"
-        } md:flex flex-col-reverse items-start  md:flex-row md:gap-10 md:items-center p-4 md:p-2 w-[80%] md:w-full h-[100vh] max-h- min-h-[400px] md:min-h-[15px] md:h-auto justify-around bg-bg_gradient`}
+        } md:flex flex-col-reverse items-start  md:flex-row md:gap-10 md:items-center p-4 md:p-2 w-[80%] md:w-full h-[100vh] max-h- min-h-[400px] md:min-h-[15px] md:h-auto justify-around    shadow-md backdrop-blur-md lg:backdrop-none lg:shadow-none bg-bg_gradient`}
       >
        <img
           src="/conpro_logo.png"
@@ -44,7 +44,10 @@ const Nav = () => {
         <div className="flex flex-col md:flex-row gap-4  h-auto items-start justify-start md:items-center">
           {nav_options.map((each_value) => (
             <Link href={each_value.nav_link} key={each_value.nav_name}>
-             <p className="text-white md:hover:text-[1.3em] md:hover:font-semibold transition-all duration-500 text-center text-[2em] md:text-[0.8em]  cursor-pointer">
+             <p 
+              onClick={()=>{ set_show_nav(false)}}
+             
+             className="text-white md:hover:text-[1.3em] md:hover:font-semibold transition-all duration-500 text-center text-[2em] md:text-[0.8em]  cursor-pointer">
 
                 {each_value.nav_name}
               </p>
