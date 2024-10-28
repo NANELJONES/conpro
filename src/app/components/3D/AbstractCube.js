@@ -12,6 +12,8 @@ const AbstractCube = () => {
               scene="https://prod.spline.design/2pF2zj5476O2S4VR/scene.splinecode" 
             />
     </main>
+
+    
       {/* <div className='w-full relative  h-[70vh]'> 
        
         <Image

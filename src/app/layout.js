@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import {Poppins}  from "next/font/google"
 import "./globals.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -21,6 +22,14 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
+
+
+
 export const metadata = {
   title: "Conpro Ltd",
   description: "Conpro, the best construction company ever",
@@ -29,7 +38,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
+      
+      <body className={`font- ${poppins.className}`} >
         <Loading>
       <StateContext> 
       <NextTopLoader 

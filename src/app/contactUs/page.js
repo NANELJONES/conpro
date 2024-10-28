@@ -62,7 +62,7 @@ const ContactPage = () => {
 
       <div className="relative layout p-5 md:p-20">
         {/* Background Image */}
-        <div className="absolute top-[10em] w-[40em] max-w-[400px] max-h-[500px] h-[60em] z-0">
+        <div className=" hidden md:block md:absolute md:top-[10em] w-[40em] max-w-[400px] max-h-[500px] h-[60em] z-0">
           <Image
             alt="background"
             src="/contact_bg.jpg"
@@ -125,7 +125,7 @@ const ContactPage = () => {
 
           <button
             type="submit"
-            className="border w-full lg:w-2/5 mx-auto text-white bg-none hover:bg-[orange] duration-300 hover:border-0"
+            className="border w-2/3 lg:w-2/5  mx-auto text-white bg-none hover:bg-[orange] duration-300 hover:border-0"
           >
             SEND MESSAGE
           </button>

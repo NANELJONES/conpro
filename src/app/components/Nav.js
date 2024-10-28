@@ -31,18 +31,17 @@ const Nav = () => {
       {/* Navigation menu */}
       <div
         className={`${
-          show_nav ? "flex" : "hidden"
-        } md:flex flex-col   md:flex-row gap-10 md:items-center p-4 md:p-2 w-[80%] md:w-full h-[100vh] min-h-[400px] md:min-h-[15px] md:h-auto justify-around bg-bg_gradient`}
+          show_nav ? "block pt-20" : "hidden"
+        } md:flex flex-col-reverse items-start  md:flex-row md:gap-10 md:items-center p-4 md:p-2 w-[80%] md:w-full h-[100vh] max-h- min-h-[400px] md:min-h-[15px] md:h-auto justify-around bg-bg_gradient`}
       >
-        <Image
+       <img
           src="/conpro_logo.png"
           alt="Company Logo"
-          width={96}
-          height={96}
-          className="w-[6em]"
+          
+          className="w-full hidden md:block  md:w-[6em]"
         />
 
-        <div className="flex flex-col md:flex-row gap-4  items-start justify-start md:items-center">
+        <div className="flex flex-col md:flex-row gap-4  h-auto items-start justify-start md:items-center">
           {nav_options.map((each_value) => (
             <Link href={each_value.nav_link} key={each_value.nav_name}>
              <p className="text-white md:hover:text-[1.3em] md:hover:font-semibold transition-all duration-500 text-center text-[2em] md:text-[0.8em]  cursor-pointer">
@@ -52,6 +51,13 @@ const Nav = () => {
             </Link>
           ))}
         </div>
+        
+        {show_nav ? <img
+          src="/conpro_logo.png"
+          alt="Company Logo"
+          
+          className="w-[15em] mt-2 md:hidden md:w-[6em]"
+        />:""}
       </div>
     </div>
   );

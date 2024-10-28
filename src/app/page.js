@@ -1,3 +1,5 @@
+
+import { SingleLine } from "./components/Lines";
 import Image from "next/image";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
@@ -10,6 +12,7 @@ import SampleGallery from "./components/SampleGallery";
 import Society from "./components/Society";
 import Clients from "./components/Clients";
 import Testimonials from "./components/Testimonials";
+import TextAnimation from "./components/TextAnimation";
 
 export default function Home() {
   return (
@@ -20,9 +23,20 @@ export default function Home() {
     <div className="flex  flex-col lg:flex-row gap-4 relative h-auto bg-black-200 w-full  ">
     
       <AbstractCube></AbstractCube>
-      <div className="flex flex-col lg:w-[60%]  z-10 gap-20 w-full " >
+      <div className="flex flex-col lg:w-[60%]  z-10 gap-10 w-full " >
 
            <OurServices/>
+
+
+        <div className="p-10">
+        <TextAnimation text="Intergrity"></TextAnimation>
+        <TextAnimation text="Innovation"></TextAnimation>
+        <TextAnimation text="Sustaibabliity"></TextAnimation>
+        <SingleLine delay_time="1"/>
+   
+        </div>
+                  
+           
    
            <SampleProject/>
         
