@@ -50,7 +50,7 @@ const OurServices = () => {
               />
             )}
 
-            <h5 className='p-2 w-[75%] gap-2 md:w-[60%] flex'>
+            <h5 className='p-2 w-[75%] gap-2 md:w-[60%] flex items-center gap-2 cursor-pointer'>
             <img src={each_service?.node?.serviceIcon?.url ? each_service?.node?.serviceIcon?.url  :"/services icons/structure engineering.svg"} width={35} className='md:hidden' alt="Service Icon" />  {index + 1}. {each_service?.node?.serviceName}
             </h5>
 

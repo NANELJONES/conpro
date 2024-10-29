@@ -1,7 +1,10 @@
 import React from 'react'
+import AnimateUp from './AnimateUp'
 
 const Anniversary = () => {
   return (
+    <>
+    <AnimateUp>
     <div id="Anniversary" className='p-8 bg-[rgba(256,256,256,0.6)] shadow-md backdrop-blur-md lg:backdrop-none lg:shadow-none lg:bg-none w-full'>
 
                 <div className=' gap-5'>
@@ -36,6 +39,8 @@ const Anniversary = () => {
                 referrerPolicy="no-referrer-when-downgrade" ></iframe>
                 </div>
     </div>
+    </AnimateUp>
+    </>
   )
 }
 

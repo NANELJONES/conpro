@@ -87,7 +87,7 @@ const ContactPage = () => {
                 setContact({ ...contact, user_name: e.target.value })
               }
               name="user_name"
-              className="bg-transparent border-b text-[0.8em] text-white p-2"
+              className="bg-transparent border text-[0.8em] text-white p-2"
               placeholder="Please Enter Your Name"
               required
             />
@@ -102,7 +102,7 @@ const ContactPage = () => {
               }
               name="user_email"
               type="email"
-              className="bg-transparent border-b text-white p-2 text-[0.8em]"
+              className="bg-transparent border text-white p-2 text-[0.8em]"
               placeholder="Please Enter Your Email"
               required
             />
@@ -117,7 +117,7 @@ const ContactPage = () => {
               }
               name="message"
               rows="5"
-              className="bg-transparent border-b text-white p-2 text-[0.8em]"
+              className="bg-transparent border text-white p-2 text-[0.8em]"
               placeholder="Enter your message"
               required
             ></textarea>

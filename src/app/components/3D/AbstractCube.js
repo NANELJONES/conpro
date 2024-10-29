@@ -5,11 +5,11 @@ import Spline from '@splinetool/react-spline/next';
 
 const AbstractCube = () => {
   return (
-    <div className='w-full h-[100vh] lg:w-[40%]   sticky top-20'>
+    <div className='w-full h-[80vh] lg:w-[40%]   sticky top-20'>
 
 <main className='h-[100%]'>
       <Spline
-              scene="https://prod.spline.design/2pF2zj5476O2S4VR/scene.splinecode" 
+              scene="https://prod.spline.design/78-6Bq1PvudqtD6M/scene.splinecode" 
             />
     </main>
 

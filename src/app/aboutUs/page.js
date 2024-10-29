@@ -7,7 +7,7 @@ import Link from 'next/link'
 import { motion ,useScroll, useTransform, useMotionValue} from 'framer-motion'
 import { useStateContext } from '../Context/StateContext'
 import { useRef } from 'react'
-
+import AnimateUp from '../components/AnimateUp'
 
 const Page = () => {
 
@@ -60,39 +60,49 @@ const Page = () => {
       className='w-full flex flex-col items-start justify-start gap-10 md:w-[70%]   '>
         {/* who we are */}
         <div  id="who_we_are">
-            <h3>Who are we?</h3>
+          <AnimateUp><h3>Who are we?</h3></AnimateUp>
+            
+            <AnimateUp>
             <div className='w-full h-[15em] lg:h-[30em] max-h-[400px] bg-blue-600 rounded-2xl'></div>
             <br/>
             <h6 className='border-l-4 border-secondary_color px-6'>{`CONPRO Limited is a Civil Engineering and Construction Firm which provides a wide range of services in construction and development-related activities. With professionals from various disciplines, CONPRO Limited comprehensively provides services to our clients ranging from Consulting, Civil Services and Cost Engineering. `}</h6>
             <br/>
+            </AnimateUp>
 
+        <AnimateUp>
+
+       
             <h6 className='border-l-4 border-secondary_color px-6'>{`We have been in operation and existence since 2004 and have delivered the best of works to clients timely and accordingly. Our drive is to satisfy our clients and we ensure that they are sustained by the rapport we have with them. `}</h6>
+           
             <br/>
+            </AnimateUp>
 
         </div>
 
 
-        <h3 className='hidden md:block' >We are an multi-national award winning Constrution, Consulting Civil Service and Cost Engineers that provide top notch civil services for over 20 years </h3>
-        <h4 className='md:hidden block' >We are an multi-national award winning Constrution, Consulting Civil Service and Cost Engineers that provide top notch civil services for over 20 years </h4>
+       <AnimateUp> <h3 className='hidden md:block' >We are an multi-national award winning Constrution, Consulting Civil Service and Cost Engineers that provide top notch civil services for over 20 years </h3></AnimateUp>
+       <AnimateUp> <h4 className='md:hidden block' >We are an multi-national award winning Constrution, Consulting Civil Service and Cost Engineers that provide top notch civil services for over 20 years </h4></AnimateUp>
 
      {/* pHILO*/}
      <div id="philosophy" >
-            <h3>Our Philosophy</h3>
+            <AnimateUp><h3>Our Philosophy</h3> </AnimateUp> 
             <div className='w-full h-[15em] md:h-[30em] max-h-[400px] bg-blue-600 rounded-2xl'></div>
             <br/>
-            <h6 className='border-l-4 border-secondary_color px-6' >{`At our company, we recognize the transformative power of
+            <AnimateUp><h6 className='border-l-4 border-secondary_color px-6' >{`At our company, we recognize the transformative power of
 collaboration, integrity, and continuous growth within the
 construction industry. We are dedicated to forging strong
 partnerships that drive mutual success and innovation in every
 project we undertake.  `}</h6>
             <br/>
-
+            </AnimateUp>
+            <AnimateUp>
             <h6 className='border-l-4 border-secondary_color px-6'>{`Our employees are our greatest asset, and we
 prioritize their satisfaction and professional development to ensure
 they thrive in their roles. By fostering a supportive and inclusive
 work environment, we empower our team to excel and make
 meaningful contributions to our clients and the communities we
 serve.`}</h6>
+</AnimateUp>
             <br/>
 
       </div>
@@ -101,12 +111,14 @@ serve.`}</h6>
         {/*mission and vision*/}
          <div  id="mission&vision">
 
-
+            <AnimateUp>
            <h4>Mission & Vision</h4>
            <br/>
-            <h6 className='border-l-4 border-secondary_color px-6'>{`Mission Limited is a Civil Engineering and Construction Firm which provides a wide range of services in construction and development-related activities. With professionals from various disciplines, CONPRO Limited comprehensively provides services to our clients ranging from Consulting, Civil Services and Cost Engineering. `}</h6>
+           </AnimateUp>
+
+           <AnimateUp><h6 className='border-l-4 border-secondary_color px-6'>{`Mission Limited is a Civil Engineering and Construction Firm which provides a wide range of services in construction and development-related activities. With professionals from various disciplines, CONPRO Limited comprehensively provides services to our clients ranging from Consulting, Civil Services and Cost Engineering. `}</h6></AnimateUp> 
            <br/>
-            <h6 className='border-l-4 border-secondary_color px-6'>{`Vision Limited is a Civil Engineering and Construction Firm which provides a wide range of services in construction and development-related activities. With professionals from various disciplines, CONPRO Limited comprehensively provides services to our clients ranging from Consulting, Civil Services and Cost Engineering. `}</h6>
+           <AnimateUp> <h6 className='border-l-4 border-secondary_color px-6'>{`Vision Limited is a Civil Engineering and Construction Firm which provides a wide range of services in construction and development-related activities. With professionals from various disciplines, CONPRO Limited comprehensively provides services to our clients ranging from Consulting, Civil Services and Cost Engineering. `}</h6></AnimateUp>
 
             <br/>
 
@@ -117,7 +129,7 @@ serve.`}</h6>
             {/*Our goal*/}
             <div  id="ourgoal">
 
-           <h4>Our Goal</h4>
+        <AnimateUp><h4>Our Goal</h4></AnimateUp>   
            <br/>
             <div className='w-full p-6 bg-secondary_color'>
             <h4 className='text-white'>{`Strengthen partnerships by collaborating with 5 key industry leaders
@@ -135,25 +147,25 @@ programs to 90% of our staff within the next 12 months.  `}</h4>
 
      {/* Our culture*/}
      <div id="ourculture" >
-            <h3>Our Culture</h3>
+       <AnimateUp>   <h3>Our Culture</h3></AnimateUp>  
             <div className='w-full h-[15em] md:h-[30em] max-h-[400px] bg-blue-600 rounded-2xl'></div>
             <br/>
-            <h6>{`Our company culture is built on a foundation of collaboration,
+       <AnimateUp>   <h6>{`Our company culture is built on a foundation of collaboration,
 respect, and a commitment to continuous improvement within the
 construction industry. We promote an inclusive environment where
 every team member’s voice is valued, fostering creativity and
 innovation in our projects. We emphasize work-life balance to
 ensure that our employees feel supported in both their personal and
-professional lives.`}</h6>
+professional lives.`}</h6></AnimateUp>  
             <br/>
 
-            <h6>{`Our commitment to ongoing training and
+           <AnimateUp> <h6>{`Our commitment to ongoing training and
 development equips our team with the skills necessary to excel in a
 rapidly evolving industry. We celebrate achievements, both big and
 small, recognizing that our collective success is driven by strong
 partnerships and a shared vision. Together, we cultivate a positive
 workplace culture that inspires excellence and delivers
-transformative results for our clients and communities.`}</h6>
+transformative results for our clients and communities.`}</h6></AnimateUp>
             <br/>
 
 
@@ -164,7 +176,7 @@ transformative results for our clients and communities.`}</h6>
 
 
 
-
+<AnimateUp>
           {/* Meet Our Team*/}
      <div  id="teammates">
             <h4>Meet our hardworking team</h4>
@@ -206,7 +218,7 @@ transformative results for our clients and communities.`}</h6>
 
       </div>
 
-
+      </AnimateUp>
 
       </div>
 

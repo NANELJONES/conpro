@@ -20,6 +20,7 @@ const SampleGallery = () => {
       <h4 className="px-4 border-l-8 border-secondary_color w-2/3">
         Our gallery of samples of our projects
       </h4>
+      <br/>
     <Link href={"/gallery"}>  <button className="bg-none">Explore More Of Our Gallery</button></Link>
 
       <div className="flex items-center justify-around flex-wrap gap-4">

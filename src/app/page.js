@@ -12,7 +12,7 @@ import SampleGallery from "./components/SampleGallery";
 import Society from "./components/Society";
 import Clients from "./components/Clients";
 import Testimonials from "./components/Testimonials";
-import TextAnimation from "./components/TextAnimation";
+import {TextAnimation, WordAnimation} from "./components/TextAnimation";
 
 export default function Home() {
   return (
@@ -23,14 +23,16 @@ export default function Home() {
     <div className="flex  flex-col lg:flex-row gap-4 relative h-auto bg-black-200 w-full  ">
     
       <AbstractCube></AbstractCube>
-      <div className="flex flex-col lg:w-[60%]  z-10 gap-10 w-full " >
+      <div className="flex flex-col p-2 md:p-8 lg:w-[60%]  z-10 gap-10 w-full " >
 
            <OurServices/>
 
-           <h4 className="p-10">{`We specialize in delivering top-tier civil engineering, construction, and consulting services.Certified by industry leading bodies, our team of experts is dedicated to upholding the highest standards of quality and safety in every project we undertake.`}</h4>
+         <WordAnimation text="We specialize in delivering top-tier civil engineering, construction, and consulting services."></WordAnimation>
+     
+         <WordAnimation text="Certified by industry leading bodies, our team of experts is dedicated to upholding the highest standards of quality and safety in every project we undertake."></WordAnimation>
         
        
-        <div className="p-10">
+        <div className="">
        
         <TextAnimation text="Intergrity"></TextAnimation>
         <TextAnimation text="Innovation"></TextAnimation>
