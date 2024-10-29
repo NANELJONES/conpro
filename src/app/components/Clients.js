@@ -12,8 +12,8 @@ const Clients = () => {
 
   return (
     <div className="w-full border p-8 border-secondary_color">
-      <div className="normal_div gap-5">
-        <h1>Our <br /> Partners & Clients</h1>
+      <div className=" gap-5 items-start">
+        <h1 className=''>Our <br /> Partners & Clients</h1>
       </div>
 
       <h5 className='w-full md:w-2/3'>

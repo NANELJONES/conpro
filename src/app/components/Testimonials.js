@@ -43,9 +43,10 @@ const Testimonials = () => {
   ]
   return (
      <div className='w-full border p-8 border-secondary_color'>
-       <div className='normal_div gap-8'>
+       <div className=' gap-8'>
                 <h1 className=''>Clients <br /> Testimonials</h1>
-                 <h5 className=' md:w-[1/3]'>
+                <br/>
+                 <h5 className=' md:w-2/3'>
                 {` At ConPro, we believe that our clients’ satisfaction is not just a metric; it's the very foundation of our success and the driving force behind everything we do. `}
                 <br /><br />
                 Our clients’ satisfaction is the foundation of everything we do. Here’s what they have to say about working with ConPro:
