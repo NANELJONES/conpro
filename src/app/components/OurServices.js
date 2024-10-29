@@ -41,7 +41,7 @@ const OurServices = () => {
             key={index}
             onMouseEnter={() => set_show_img(each_service.Service_Name)}
             onMouseLeave={() => set_show_img("")}
-            className='md:p-4 flex items-center border-b-2 gap-2 border-primary_color justify-around relative'
+            className='md:p-4 flex items-center border-b-2 border-b-secondary_color gap-2 border-primary_color justify-around relative'
           >
             {show_img === each_service?.node?.serviceName && (
               <img 
@@ -58,7 +58,7 @@ const OurServices = () => {
            
 
             <Link href={'#'}>
-              <button className='bg-none p-0 border-none md:p-2'>Read More ..</button>
+              <button className='bg-none p-0 border-none md:p-2 text-primary_color'>Read More ..</button>
             </Link>
           </motion.div>
 

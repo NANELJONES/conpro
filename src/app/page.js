@@ -27,12 +27,15 @@ export default function Home() {
 
            <OurServices/>
 
-         <WordAnimation text="We specialize in delivering top-tier civil engineering, construction, and consulting services."></WordAnimation>
-     
-         <WordAnimation text="Certified by industry leading bodies, our team of experts is dedicated to upholding the highest standards of quality and safety in every project we undertake."></WordAnimation>
-        
+    <div className="p-8 bg-[rgba(256,256,256,0.6)] shadow-md md:backdrop-blur-md md::backdrop-none md:shadow-none md::bg-none">
+    <WordAnimation text="We specialize in delivering top-tier civil engineering, construction, and consulting services."></WordAnimation>
+     <br/>
+     <WordAnimation text="Certified by industry leading bodies, our team of experts is dedicated to upholding the highest standards of quality and safety in every project we undertake."></WordAnimation>
+    
+    </div>
+    
        
-        <div className="">
+        <div className=" p-8 bg-[rgba(256,256,256,0.6)] shadow-md md:backdrop-blur-md md::backdrop-none md:shadow-none md::bg-none">
        
         <TextAnimation text="Intergrity"></TextAnimation>
         <TextAnimation text="Innovation"></TextAnimation>

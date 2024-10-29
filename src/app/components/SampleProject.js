@@ -55,7 +55,7 @@ const SampleProject = () => {
           whileInView={{ opacity: 1, y: 0,}}
           transition={{duration:2  }}
     
-    className='p-8 overflow-x-hidden flex flex-col gap-4 bg-[rgba(256,256,256,0.6)] shadow-md backdrop-blur-md lg:backdrop-none lg:shadow-none lg:bg-none w-full'>
+    className='p-8 overflow-x-hidden flex flex-col gap-4 bg-[rgba(256,256,256,0.6)] shadow-md md:backdrop-blur-md lg:backdrop-none lg:shadow-none lg:bg-none w-full'>
       <div className='flex flex-col md:flex-row md:items-center md:justify-between gap-5'>
         <h1>Our <br /> Projects</h1>
         <p>
