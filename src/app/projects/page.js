@@ -72,7 +72,7 @@ const Page = () => {
                 >
                   <Image
                     alt="this is here"
-                    src={each_project?.node.projectImages[0].url }
+                    src={each_project?.node?.projectImages[0]?.url ? each_project?.node?.projectImages[0]?.url :"/gallery_bg.jpg"}
                     className="w-full h-full object-cover "
                     fill
                   />

@@ -75,7 +75,7 @@ const SampleProject = () => {
               <div className='relative w-[10em] h-[10em]          md:w-[18em]  md:h-[18em]   md:max-w-[400]  md:max-h-[400px]'>
                 <Image
                   alt='Project Image'
-                  src={each_project?.node.projectImages[0].url}
+                  src={each_project?.node?.projectImages[0]?.url ? each_project?.node?.projectImages[0]?.url :"/gallery_bg.jpg"}
                   className='w-full object-cover'
                   fill={true}
                 />

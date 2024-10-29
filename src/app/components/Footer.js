@@ -63,7 +63,7 @@ const Footer = () => {
 
       </div>
       <br/>
-      <div className='normal_div'>
+      <div className='normal_div '>
           <Link href={"#"}> <h6 className='text-white border-b-2 md:border-l-4 p-2'>Our Company</h6></Link>
           <Link href={"/services"}> <h6 className='text-white border-b-2 md:border-l-4 p-2 w-full'>Our Services</h6></Link>
           <Link href={"/projects"}> <h6 className='text-white border-b-2 md:border-l-4 p-2'>Projects</h6></Link>

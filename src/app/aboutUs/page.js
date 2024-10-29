@@ -4,19 +4,33 @@ import Layout1 from '../layout/Layout1'
 import { team } from '../Data/Data'
 import Image from 'next/image'
 import Link from 'next/link'
-import { motion ,useScroll} from 'framer-motion'
+import { motion ,useScroll, useTransform, useMotionValue} from 'framer-motion'
 import { useStateContext } from '../Context/StateContext'
-
+import { useRef } from 'react'
 
 
 const Page = () => {
+
   const {team} = useStateContext()
-  const { scrollY } = useScroll()
+  const parent_div = useRef(null)
+  const { scrollYProgress } = useScroll({
+    target:parent_div
+  }
+  )
+
+  const height = useTransform(
+    scrollYProgress,
+    [0,1],
+    ["0%","100%"]
+
+  )
+
+
   return (
 
 
 
-    <div className=' transition ease-in-out duration-600 p-10 mx-auto max-w-[1500px] md:py-20  gap-6  flex items-start   relative  '>
+    <div className=' transition ease-in-out duration-600 p-4 mx-auto max-w-[1500px] md:py-20  gap-6  flex items-start   relative  '>
 
       <div className='w-full relative hidden md:block md:w-[20%] flex px-4  sticky top-[70px]'>
         <div >
@@ -28,8 +42,9 @@ const Page = () => {
        <Link href={"/aboutUs/#teammates"}><h6 className='hover:text-[1.5em] duration-500 '>Meet the Team</h6></Link>
         </div>
 
-       {/* <motion.div style={{height:scrollY}} className='w-[1px]  bg-secondary_color absolute left-0 top-0'> </motion.div>
- */}
+      {/*  */}
+       <motion.div style={{height}}  className='w-[1px]  bg-secondary_color absolute left-0 top-0'>  </motion.div>
+
 
 
 
@@ -37,10 +52,12 @@ const Page = () => {
 
       </div>
 
-      {/* line */}
+ 
 
 
-      <div className='w-full flex flex-col items-start justify-start gap-10 md:w-[70%]   '>
+      <div 
+      ref={parent_div}
+      className='w-full flex flex-col items-start justify-start gap-10 md:w-[70%]   '>
         {/* who we are */}
         <div  id="who_we_are">
             <h3>Who are we?</h3>
@@ -55,7 +72,8 @@ const Page = () => {
         </div>
 
 
-        <h3 >We are a multi-national compaby that believes in all things great and amazing accross all platfomrs and rteam </h3>
+        <h3 className='hidden md:block' >We are an multi-national award winning Constrution, Consulting Civil Service and Cost Engineers that provide top notch civil services for over 20 years </h3>
+        <h4 className='md:hidden block' >We are an multi-national award winning Constrution, Consulting Civil Service and Cost Engineers that provide top notch civil services for over 20 years </h4>
 
      {/* pHILO*/}
      <div id="philosophy" >

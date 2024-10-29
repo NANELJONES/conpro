@@ -27,11 +27,14 @@ export default function Home() {
 
            <OurServices/>
 
-
+           <h4 className="p-10">{`We specialize in delivering top-tier civil engineering, construction, and consulting services.Certified by industry leading bodies, our team of experts is dedicated to upholding the highest standards of quality and safety in every project we undertake.`}</h4>
+        
+       
         <div className="p-10">
+       
         <TextAnimation text="Intergrity"></TextAnimation>
         <TextAnimation text="Innovation"></TextAnimation>
-        <TextAnimation text="Sustaibabliity"></TextAnimation>
+        <TextAnimation text="Sustainabliity"></TextAnimation>
         <SingleLine delay_time="1"/>
    
         </div>

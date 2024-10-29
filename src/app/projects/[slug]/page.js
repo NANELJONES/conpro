@@ -79,7 +79,7 @@ const Page = () => {
             {/* <h3>Who are we?</h3> */}
             <div className='relative w-full h-[15em] lg:h-[30em] max-h-[400px] bg-blue-600 rounded-2xl'>
             <Image
-                    src={project?.projectImages[0]?.url}
+                    src={project?.projectImages[0]?.url ? project?.projectImages[0]?.url: "/gallery_bg.jpg"}
                     fill
                     unoptimized
                     className="object-cover"
@@ -122,30 +122,32 @@ const Page = () => {
             <h4>Gallery  Media Of Our Project</h4>
           
             <div className={`flex items-center justify-center  md:justify-center gap-[1em] 2xl:gap-[3em] w-full  flex-wrap  `}>
-          {project.projectImages.map((each_image, index) => {
-            return (
-              <div
-                key={index}
-                className={`w-[60vw]  md:w-[20vw]   shadow-2xl max-w-[300px] ${index % 2 === 0 ? 'mt-20' : 'mt-0'}`}
-              
-                onClick={()=>{ set_show_modal(true), set_url(each_image.url)}}
-              >
-                <div 
-                
-                
-                className="relative w-full h-[70vw] md:h-[25vw] max-h-[300px]">
-                  <Image
-                    src={each_image.url}
-                    fill
-                    unoptimized
-                    className="object-cover"
-                  ></Image>
-                </div>
-             
-               
-              </div>
-            );
-          })}
+            {project?.projectImages && project.projectImages.length > 0 ? (
+  project.projectImages.map((each_image, index) => (
+    <div
+      key={index}
+      className={`w-[60vw] md:w-[20vw] shadow-2xl max-w-[300px] ${
+        index % 2 === 0 ? 'mt-20' : 'mt-0'
+      }`}
+      onClick={() => {
+        set_show_modal(true);
+        set_url(each_image.url);
+      }}
+    >
+      <div className="relative w-full h-[70vw] md:h-[25vw] max-h-[300px]">
+        <Image
+          src={each_image?.url || ""}
+          fill
+          unoptimized
+          className="object-cover"
+        />
+      </div>
+    </div>
+  ))
+) : (
+  <p className="text-center w-full">No project images available.</p>
+)}
+
         </div>
           
 
