@@ -66,7 +66,7 @@ const SampleProject = () => {
 
       </div>
    
-    <Link href={"/projects"}>  <button className="bg-none">Explore Our Projects</button>    </Link>
+    <Link href={"/projects"}>  <button className="text-secondary_color border-2  border-secondary_color  bg-none ">Explore Our Projects</button>    </Link>
       <div className='w-[100vw]  bg-secondary_color border p-10 slider-container relative md:max-w-[1000px] mx-auto'>
         <Slider {...settings}>
           {all_projects.map((each_project, index) => (

@@ -22,7 +22,7 @@ const Footer = () => {
               </div>
 
               <div className='w-full md:w-[30%] md:w-flex flex-col items-center gap-4 md:block'>
-                <h2 className='text-white text-center md:text-left'>{`Our`} <br/>Socials</h2>
+                <h2 className='text-white text-center md:text-left'>{`Our`} <br/>Contact</h2>
                 
 
                   {/*Location  */}

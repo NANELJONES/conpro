@@ -21,7 +21,7 @@ const SampleGallery = () => {
         Our gallery of samples of our projects
       </h4>
       <br/>
-    <Link href={"/gallery"}>  <button className="bg-none">Explore More Of Our Gallery</button></Link>
+    <Link href={"/gallery"}>  <button className="text-secondary_color border-2  border-secondary_color  bg-none ">Explore More Of Our Gallery</button></Link>
 
       <div className="flex items-center justify-around flex-wrap gap-4">
         {firstFourImages.map((img, index) => (
@@ -37,7 +37,7 @@ const SampleGallery = () => {
             onClick={()=>{ set_show_modal(true), set_url(img.url)}}
           >
             <Image
-              alt={`Gallery Image ${index + 1}`}
+              alt={`Gallery Image `}
               src={img.url}
               className="w-full object-cover rounded-2xl"
               fill

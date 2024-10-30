@@ -22,7 +22,7 @@ const OurServices = () => {
       <div className='flex flex-col flex-wrap md:flex-row md:items-center md:justify-between  gap-5 md:items-start justify-start'>
         <h1>Our <br /> Services</h1>
         <h6 className=''>
-        {`  At ConPro, we provide a wide range of construction services tailored to meet the specific needs of each client. Whether you're building from the ground up or transforming an existing space, our expert team delivers with precision and care.`}
+        {`  At CONPRO Limited, we offer a comprehensive range of services designed to meet the diverse needs of our clients. From consulting and civil engineering to cost management, our expertise covers every aspect of construction and development. Whether you are building new structures or rehabilitating existing ones, we deliver practical, efficient, and high-quality solutions tailored to your specific project requirements.`}
           <br /><br />
           Explore the diverse range of our services, spanning multiple disciplines to meet various needs and challenges.
         </h6>
@@ -57,7 +57,7 @@ const OurServices = () => {
             {each_service?.node?.serviceIcon?.url ?  <img src={each_service?.node?.serviceIcon?.url} width={35} className='hidden md:flex' alt="Service Icon" /> :  <img src={"/services icons/structure engineering.svg"} width={35} className='hidden md:flex' alt="Service Icon" />}
            
 
-            <Link href={'#'}>
+            <Link href={`/services/#${each_service?.node?.serviceName}`}>
               <button className='bg-none p-0 border-none md:p-2 text-primary_color'>Read More ..</button>
             </Link>
           </motion.div>

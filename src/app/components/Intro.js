@@ -1,12 +1,15 @@
 "use client"
 import React from 'react'
 import { motion } from "framer-motion";
+import Link from 'next/link';
 import Layout1 from '../layout/Layout1';
+import { AllLines } from './AllLines';
+import {Swiper, SwiperSlide} from 'swiper';
 
 const Intro = () => {
   return (
     <div className='w-full'>
-
+      
   
     <div className='h-auto  md:p-20 p-10 gap-10  justify-between md:flex-row items-center max-w-[1500px] mx-auto flex-col-reverse border  max-h-fit flex items-center  bg-secondary_color'>
         {/* Texts */}
@@ -34,18 +37,23 @@ const Intro = () => {
             <br></br>
 
             <div className='w-full  h-[10em] overflow-hidden'>
+
                 <motion.div 
                 
                 initial={{ x: 80 }}
-                whileInView={{  x: '-50%' }}
+                whileInView={{  x: '-20%' }}
                 transition={{ duration: 2}}
                 className='w-full  h-[10em] w-[70vw] flex items-center  gap-10  '>
-                    <img src="/Us/test img.png" className='w-[10em]'/>
-                    <img src="/Us/test img.png" className='w-[10em]'/> <img src="/Us/test img.png" className='w-[10em]'/> 
-                    <img src="/Us/test img.png" className='w-[10em]'/>
+                    <img src="/Us/1.jpg" className='w-[10em]'/>
+                    <img src="/Us/2.jpg" className='w-[10em]'/>
+                    <img src="/Us/3.jpeg" className='w-[10em]'/>
+                    <img src="/Us/4.jpeg" className='w-[10em]'/>
                     
                 </motion.div>
             </div>
+            <br/>
+            <Link href={"/aboutUs"}><button className='border-2 w-2/3 max-w-[200px] bg-none  text-white rounded-full'>Learn More</button></Link>
+
 
        </motion.div>
      

@@ -5,14 +5,19 @@ import Image from "next/image";
 import Layout1 from "../layout/Layout1";
 import { motion } from "framer-motion";
 import { useStateContext } from "../Context/StateContext";
-
+import { AllLines } from "../components/AllLines";
 const Page = () => {
   const { services } = useStateContext();
 
   return (
-    <div className="p-10 lg:py-20 relative flex flex-col gap-10 max-w-[1500px] mx-auto">
+    <div className="realtive  h-auto ">
+   
+    
+    <div className="p-10  relative lg:py-20 relative flex flex-col gap-10 max-w-[1500px] mx-auto">
+    <AllLines line_color={"#14173E"}></AllLines>
       {services?.map((each_service, index) => (
         <motion.div
+        id={`${each_service?.node?.serviceName}`}
           key={index}
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -34,7 +39,7 @@ const Page = () => {
             />
           </div>
 
-          <div className="w-full flex flex-col gap-5 md:w-1/2">
+          <div className="w-full flex flex-col gap-5 md:w-2/3">
             <h3 className="w-2/3">
               {index + 1}. {each_service?.node?.serviceName}
             </h3>
@@ -44,6 +49,7 @@ const Page = () => {
           </div>
         </motion.div>
       ))}
+    </div>
     </div>
   );
 };

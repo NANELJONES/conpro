@@ -8,6 +8,7 @@ import { motion ,useScroll, useTransform, useMotionValue} from 'framer-motion'
 import { useStateContext } from '../Context/StateContext'
 import { useRef } from 'react'
 import AnimateUp from '../components/AnimateUp'
+import { AllLines } from '../components/AllLines'
 
 const Page = () => {
 
@@ -35,11 +36,12 @@ const Page = () => {
       <div className='w-full relative hidden md:block md:w-[20%] flex px-4  sticky top-[70px]'>
         <div >
         <Link href={"/aboutUs/#who_we_are"}> <h6 className='hover:text-[1.5em] duration-500 '>Who we are?</h6></Link>
-       <Link href={"/aboutUs/#philosophy"}><h6 className='hover:text-[1.5em] duration-500 '>Philosphy</h6></Link>
+        <Link href={"/aboutUs/#history"}> <h6 className='hover:text-[1.5em] duration-500 '>Our History</h6></Link>
+       {/* <Link href={"/aboutUs/#philosophy"}><h6 className='hover:text-[1.5em] duration-500 '>Philosphy</h6></Link> */}
        <Link href={"/aboutUs/#mission&vision"}><h6 className='hover:text-[1.5em] duration-500 '>Mission & Vision</h6></Link>
        <Link href={"/aboutUs/#ourgoal"}><h6 className='hover:text-[1.5em] duration-500 '>Our Goal</h6></Link>
        <Link href={"/aboutUs/#ourculture"}><h6 className='hover:text-[1.5em] duration-500 '>Our Culture</h6></Link>
-       <Link href={"/aboutUs/#teammates"}><h6 className='hover:text-[1.5em] duration-500 '>Meet the Team</h6></Link>
+       {/* <Link href={"/aboutUs/#teammates"}><h6 className='hover:text-[1.5em] duration-500 '>Meet the Team</h6></Link> */}
         </div>
 
       {/*  */}
@@ -54,7 +56,7 @@ const Page = () => {
 
  
 
-
+    
       <div 
       ref={parent_div}
       className='w-full flex flex-col items-start justify-start gap-10 md:w-[70%]   '>
@@ -63,7 +65,16 @@ const Page = () => {
           <AnimateUp><h3>Who are we?</h3></AnimateUp>
             
             <AnimateUp>
-            <div className='w-full h-[15em] lg:h-[30em] max-h-[400px] bg-blue-600 rounded-2xl'></div>
+            <div className='w-full h-[15em] relative lg:h-[30em] max-h-[400px] bg-blue-600 rounded-2xl'>
+            <Image
+              alt={`/gallery`}
+              src={`/new_contact_bg.jpg`}
+              className="w-full object-cover rounded-2xl"
+              fill
+            />
+
+
+            </div>
             <br/>
             <h6 className='border-l-4 border-secondary_color px-6'>{`CONPRO Limited is a Civil Engineering and Construction Firm which provides a wide range of services in construction and development-related activities. With professionals from various disciplines, CONPRO Limited comprehensively provides services to our clients ranging from Consulting, Civil Services and Cost Engineering. `}</h6>
             <br/>
@@ -83,10 +94,62 @@ const Page = () => {
        <AnimateUp> <h3 className='hidden md:block' >We are an multi-national award winning Constrution, Consulting Civil Service and Cost Engineers that provide top notch civil services for over 20 years </h3></AnimateUp>
        <AnimateUp> <h4 className='md:hidden block' >We are an multi-national award winning Constrution, Consulting Civil Service and Cost Engineers that provide top notch civil services for over 20 years </h4></AnimateUp>
 
+
+     {/* history*/}
+     <div id="history" >
+            <AnimateUp><h3>Our History</h3> </AnimateUp> 
+            <div className='w-full h-[15em] md:h-[30em] max-h-[400px] bg-blue-600 rounded-2xl relative'>
+
+            <Image
+              alt={`/gallery`}
+              src={`/our_culture.jpeg`}
+              className="w-full object-cover grayscale rounded-2xl"
+              fill
+            />
+            </div>
+            <br/>
+            <AnimateUp><h6 className='border-l-4 border-secondary_color px-6' >{` Founded in 2004, Conpro Limited began as a 
+vision of three founding members: Agyemang 
+Badu, Victor Boateng of blessed memory, and 
+myself, Richard Quaynor. With a shared commit
+ment to professionalism and quality in the 
+construction industry, we aimed to create a com
+pany embodying the network of construction 
+professionals – hence the name 'Conpro'. We 
+firmly believe in the power of partnership and 
+combined expertise to drive our vision forward. 
+This commitment has been our cornerstone strat
+egy for achieving success. We extend this collab
+orative approach across our management team, 
+staff, and valued clients, building a strong founda
+tion of mutual growth and shared goals.`}</h6>
+            <br/>
+            </AnimateUp>
+            <AnimateUp>
+            <h6 className='border-l-4 border-secondary_color px-6'>{`Our 
+principles rest on the effective application of qual
+ity, time and cost management, which has been 
+instrumental to Conpro's sustained growth over 
+the years. 
+Ing. Richard William Quaynor
+ CEO, Conpro Limited
+ 3
+As we celebrate this milestone, we aim to 
+enhance our partnership-driven strategy. Our 
+theme, " Conpro @ 20 Impactful Service Delivery 
+Through Sustainable Partnerships," reflects our 
+dedication to advancing our mission through 
+lasting, meaningful collaborations.`}</h6>
+</AnimateUp>
+            <br/>
+
+      </div>
+
+
      {/* pHILO*/}
-     <div id="philosophy" >
+     {/* <div id="philosophy" >
             <AnimateUp><h3>Our Philosophy</h3> </AnimateUp> 
-            <div className='w-full h-[15em] md:h-[30em] max-h-[400px] bg-blue-600 rounded-2xl'></div>
+           
             <br/>
             <AnimateUp><h6 className='border-l-4 border-secondary_color px-6' >{`At our company, we recognize the transformative power of
 collaboration, integrity, and continuous growth within the
@@ -105,7 +168,7 @@ serve.`}</h6>
 </AnimateUp>
             <br/>
 
-      </div>
+      </div> */}
 
 
         {/*mission and vision*/}
@@ -148,7 +211,7 @@ programs to 90% of our staff within the next 12 months.  `}</h4>
      {/* Our culture*/}
      <div id="ourculture" >
        <AnimateUp>   <h3>Our Culture</h3></AnimateUp>  
-            <div className='w-full h-[15em] md:h-[30em] max-h-[400px] bg-blue-600 rounded-2xl'></div>
+            {/* <div className='w-full h-[15em] md:h-[30em] max-h-[400px] bg-blue-600 rounded-2xl'></div> */}
             <br/>
        <AnimateUp>   <h6>{`Our company culture is built on a foundation of collaboration,
 respect, and a commitment to continuous improvement within the
@@ -175,9 +238,9 @@ transformative results for our clients and communities.`}</h6></AnimateUp>
 
 
 
-
+{/* 
 <AnimateUp>
-          {/* Meet Our Team*/}
+         
      <div  id="teammates">
             <h4>Meet our hardworking team</h4>
             <h6>{`CONPRO Limited is a Civil Engineering and Construction Firm which provides a wide range of services in construction and development-related activities. With professionals from various disciplines, CONPRO Limited comprehensively provides services to our clients ranging from Consulting, Civil Services and Cost Engineering. `}</h6>
@@ -197,10 +260,7 @@ transformative results for our clients and communities.`}</h6></AnimateUp>
                     className="object-cover"
                   ></Image>
                 </div>
-                {/* <img
-                  src={each_team.team_image}
-                  className="w-full    object-cover "
-                /> */}
+              
                 <div className="w-full hover:text-amber-500 duration-500  bg-secondary_color  p-5 md:p-5  flex flex-col items-center justify-evenly ">
                   <h6 className=" text-center  text-white md:text-left w-full   ">
                     {each_team?.node?.employeeName}
@@ -218,7 +278,7 @@ transformative results for our clients and communities.`}</h6></AnimateUp>
 
       </div>
 
-      </AnimateUp>
+      </AnimateUp> */}
 
       </div>
 

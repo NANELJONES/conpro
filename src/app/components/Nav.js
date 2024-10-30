@@ -32,13 +32,13 @@ const Nav = () => {
       <div
         className={`${
           show_nav ? "block pt-20" : "hidden"
-        } md:flex flex-col-reverse items-start  md:flex-row md:gap-10 md:items-center p-4 md:p-2 w-[80%] md:w-full h-[100vh] max-h- min-h-[400px] md:min-h-[15px] md:h-auto justify-around    shadow-md backdrop-blur-md lg:backdrop-none lg:shadow-none bg-bg_gradient`}
+        } md:flex flex-col-reverse items-start  md:flex-row md:gap-10 md:items-center p-4 md:p-2 w-[80%] md:w-full h-[100vh] max-h- min-h-[400px] md:min-h-[15px] md:h-auto justify-around    shadow-md bg-primary_color`}
       >
        <img
-          src="/conpro_logo.png"
+          src="/Logo.jpeg"
           alt="Company Logo"
           
-          className="w-full hidden md:block  md:w-[6em]"
+          className="w-full hidden md:block  md:w-[12em]"
         />
 
         <div className="flex flex-col md:flex-row gap-4  h-auto items-start justify-start md:items-center">
@@ -56,10 +56,10 @@ const Nav = () => {
         </div>
         
         {show_nav ? <img
-          src="/conpro_logo.png"
+          src="/Logo.jpeg"
           alt="Company Logo"
           
-          className="w-[15em] mt-2 md:hidden md:w-[6em]"
+          className="w-[15em] mt-2 md:hidden md:w-[12em]"
         />:""}
       </div>
     </div>

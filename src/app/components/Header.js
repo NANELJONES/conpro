@@ -4,11 +4,13 @@ import Layout1 from '../layout/Layout1'
 import SimpleData from './Data Stats/SimpleData'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { AllLines } from './AllLines'
 
 
 const Header = () => {
   return (
   <div className='bg-primary_color h-full    relative bg-green-100 flex flex-col item-center justify-between gap-10    '>
+  <AllLines ></AllLines>
   <Layout1>
 
   <div className=' text-white w-[100%] md:mt-[7em]   max-h-[1000px]  h-auto gap-10 justify-between  flex items-center flex-col-reverse md:flex-row   bg-primary_color'>
@@ -20,7 +22,7 @@ const Header = () => {
     transition={{ duration: 2, delay:0.2 }}
                     className='w-full md:w-[40%]'>
                                     <h4 className='text-white'>Welcome to</h4>
-                                <h1 className='text-white'>Conpro Ltd</h1>
+                                <h2 className='text-white'>Conpro Limited</h2>
                                 
                                 <h6 className='text-white'>{'We are a construction company committed to delivering innovative solutions with excellence, quality, and sustainability. Let’s build something extraordinary together!'}</h6>
                             <br/>
@@ -39,11 +41,11 @@ const Header = () => {
  </div>
 
         {/* dat starts here */}
-        <div className='w-full  mt-4 md:mt-0 h-auto  relative bottom-0 md:bottom-[1em]  lg:bottom-[2em] md:flex-row flex  flex-col  gap-5  md:items-center justify-between md:max-h-[200px]   '>
-                    <SimpleData  heading="Completed Projects" data="200 +"></SimpleData>
-                    <SimpleData  heading="Clients Satisfied" data="250 +"></SimpleData>
+        <div className='w-full  mt-4 md:mt-5 h-auto  relative bottom-0 md:bottom-[1em]  lg:bottom-[2em] md:flex-row flex  flex-col  gap-5  md:items-center justify-between md:max-h-[200px]   '>
+                    <SimpleData  heading="Completed Projects" data="200"></SimpleData>
+                    <SimpleData  heading="Clients Satisfied" data="250"></SimpleData>
                     <SimpleData  heading="Total Employment Since 2004" data="597"></SimpleData>
-                    <SimpleData  heading="Institutional Certification" data="25 +"></SimpleData>
+                    <SimpleData  heading="Institutional Certification" data="25"></SimpleData>
                     
 
         </div>

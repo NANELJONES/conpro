@@ -65,7 +65,7 @@ const ContactPage = () => {
         <div className=" hidden md:block md:absolute md:top-[10em] w-[40em] max-w-[400px] max-h-[500px] h-[60em] z-0">
           <Image
             alt="background"
-            src="/contact_bg.jpg"
+            src="/new_contact_bg.jpg"
             className="w-full h-full object-cover"
             fill={true}
           />
