@@ -56,12 +56,18 @@ const SampleProject = () => {
           transition={{duration:2  }}
     
     className='p-8 overflow-x-hidden flex flex-col gap-4 bg-[rgba(256,256,256,0.6)] shadow-md md:backdrop-blur-md lg:backdrop-none lg:shadow-none lg:bg-none w-full'>
-      <div className='flex flex-col md:flex-row md:items-center md:justify-between gap-5'>
+      <div className='flex flex-col  md:items-start md:justify-between gap-5'>
         <h1>Our <br /> Projects</h1>
         <p>
-        Our Projects section highlights the journey from concept to completion across multiple sectors, including housing developments, office complexes, retail spaces, and infrastructure.
+        At Conpro Limited , we pride ourselves on
+being a leader in infrastructure and building
+projects, dedicated to transforming visions into
+reality for a diverse range of clients.
           <br /><br />
-          Each project reflects our expertise in managing timelines, budgets, and client expectations with precision. Explore the multifaceted categories of our meticulous projects. 
+          With a
+strong commitment to quality, innovation, and
+sustainability, we deliver tailored solutions that
+meet the unique needs of each project.
         </p>
 
       </div>

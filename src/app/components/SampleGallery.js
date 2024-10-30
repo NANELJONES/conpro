@@ -18,7 +18,7 @@ const SampleGallery = () => {
     <div className="w-full">
            {show_modal && <Modal></Modal>}
       <h4 className="px-4 border-l-8 border-secondary_color w-2/3">
-        Our gallery of samples of our projects
+        Our Gallery
       </h4>
       <br/>
     <Link href={"/gallery"}>  <button className="text-secondary_color border-2  border-secondary_color  bg-none ">Explore More Of Our Gallery</button></Link>

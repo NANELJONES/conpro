@@ -31,7 +31,7 @@ const Intro = () => {
              initial={{ opacity: 0, y: 80 }}
              whileInView={{ opacity: 1, y: 0 }}
              transition={{ duration: 2, delay:0.8}}
-            className='text-white  w-full'>CONPRO Limited is a Civil Engineering and Construction Firm which provides a wide range of services in construction and development-related activities. With professionals from various disciplines, CONPRO Limited comprehensively provides services to our clients ranging from Consulting, Civil Services and Cost Engineering.</motion.h6>
+            className='text-white  w-full'>CONPRO Limited is a civil engineering and construction firm that provides a wide range of services in construction and development-related activities. With professionals from various disciplines, CONPRO Limited acts as consulting engineers in civil, services, and cost engineering</motion.h6>
             <br/>
             <h6 className='text-white w-full '>We have been in operation and existence since 2004 and have delivered the best of works to clients timely and accordingly. Our drive is to satisfy our clients and we ensure that they are sustained by the rapport we have with them.</h6>
             <br></br>

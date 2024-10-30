@@ -42,8 +42,8 @@ const Header = () => {
 
         {/* dat starts here */}
         <div className='w-full  mt-4 md:mt-5 h-auto  relative bottom-0 md:bottom-[1em]  lg:bottom-[2em] md:flex-row flex  flex-col  gap-5  md:items-center justify-between md:max-h-[200px]   '>
-                    <SimpleData  heading="Completed Projects" data="200"></SimpleData>
-                    <SimpleData  heading="Clients Satisfied" data="250"></SimpleData>
+                    <SimpleData  heading="Completed Projects" data="200+"></SimpleData>
+                    <SimpleData  heading="Clients Satisfied" data="250+"></SimpleData>
                     <SimpleData  heading="Total Employment Since 2004" data="597"></SimpleData>
                     <SimpleData  heading="Institutional Certification" data="25"></SimpleData>
                     

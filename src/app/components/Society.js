@@ -39,7 +39,7 @@ const Society = () => {
       </h3>
 
       <p className="text-white">
-        At Conpro Ltd., we believe in building not only world-class infrastructure but also thriving communities.
+      At Conpro Limited, we believe in building not only world-class infrastructure but also fostering thriving communities.
         <br />
         <br />
         Our commitment to Corporate Social Responsibility (CSR) reflects our dedication to sustainable development, environmental stewardship, and creating lasting positive impacts wherever we operate.
