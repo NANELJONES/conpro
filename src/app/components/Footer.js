@@ -26,12 +26,15 @@ const Footer = () => {
                 
 
                   {/*Location  */}
-                <span  className='flex flex-col md:flex-row  items-center gap-2 md:gap-5 '>  <img src='/location.svg' className='w-[30px]'></img> <p className='text-white text-center md:text-left'>BAC 52, 3rd Street, Baatsonaa, Tema.
-                <br/>   Plot 86 block E, Daban, Kumasi</p> </span>
-                <br/> 
+                <span  className='flex flex-col md:flex-row  items-center gap-2 md:gap-5 '>  <img src='/location.svg' className='w-[30px]'></img> <p className='text-white text-center md:text-left'>BAC 52, 3rd Street, Baatsonaa, Tema.</p> </span>
+                <br/>
+                <span  className='flex flex-col md:flex-row  items-center gap-2 md:gap-5 '>  <img src='/location.svg' className='w-[30px]'></img> <p className='text-white text-center md:text-left'>   Plot 86 block E, Daban, Kumasi</p> </span>
+   
+                <br/>
+
                 <span  className='flex flex-col md:flex-row  items-center gap-2 md:gap-5'>
 
-                <img src='/phone.svg' className='w-[30px]'></img>
+                       <img src='/phone.svg' className='w-[30px]'></img>
 
                   <span className='flex flex-col  items-center md:items-start'>
 
@@ -54,7 +57,7 @@ const Footer = () => {
 </svg> 
 
         <h4 className='text-white'>Conpro Ltd</h4>
-        <h6 className='text-center text-white'>Consulting Civil Service And Cost Engineers</h6>
+        <h6 className='text-center text-white'>Consulting Engineers: Civil, Service And Cost </h6>
 
 
 

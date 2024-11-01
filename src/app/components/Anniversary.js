@@ -6,7 +6,7 @@ const Anniversary = () => {
   return (
     <>
     <AnimateUp>
-    <div id="Anniversary" className='p-8 bg-[rgba(256,256,256,0.6)] shadow-md backdrop-blur-md lg:backdrop-none lg:shadow-none lg:bg-none w-full'>
+    <div id="Anniversary" className='p-4 bg-[rgba(256,256,256,0.6)] flex flex-col items-center shadow-md backdrop-blur-md lg:backdrop-none lg:shadow-none lg:bg-none w-full'>
 
                 <div className=' gap-5'>
                     <h2>Our 20th <br /> Anniversary</h2>
@@ -37,12 +37,12 @@ milestone. `}
                 </div>
                 <br/>
 
-                <video className='w-full rounded-xl' muted autoPlay  controls src='/AnniversaryVideo.mp4'>
+                <video className='w-[100vw]  rounded-xl' muted autoPlay  controls src='/AnniversaryVideo.mp4'>
               
 
                 </video>
                 <br/>
-                <Link href={"/Conpro Brochure 20th Revison 2.pdf"}> <button className='text-secondary_color border-2  border-secondary_color  bg-none '> Get Our Anniversary Brochure</button></Link>
+                <Link href={"/Conpro Brochure 20th Revison 2.pdf"}> <button className='text-secondary_color border-2 mx-auto  border-secondary_color  bg-none '> Get Our Anniversary Brochure</button></Link>
                 {/* <br/>
                 <div className='w-full '>
                 <iframe
