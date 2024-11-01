@@ -92,13 +92,27 @@ const Page = () => {
 
 <h6 className='tex'> <strong>Client :</strong> <br/>  {project.clientName}</h6>
 <br/>
+
 <h6 className='text-'><strong>Location :</strong> <br/> {project.projectLocation} <br/> </h6>
+<br/>
+{project && (
+  <>
+    <h6 className="text-base font-thin"> <strong>Project Services</strong></h6>
+    {project.service.map((each_service, index) => (
+      <h6 key={index}>-{each_service.serviceName}</h6>
+    ))}
+  </>
+)}
+
+
 
 <br/>
 <h6 className='text- font-thin'> <strong>Start Date : </strong> <br/> {project?.startDate}</h6>
 <h6 className='text- font-thin'> <strong>End Date :</strong><br/>  {project?.endDate}</h6>
 <br/>
 <h6 className='text- font-thin'> <strong>Project Status :</strong> <br/> {project?.projectStatus}</h6>
+
+
 
 
 </div>
@@ -109,7 +123,8 @@ const Page = () => {
            
 
 
-        <h6>{project.projectDetails}</h6>
+       
+        <pre className="whitespace-pre-wrap break-words font-[Poppins]"> {project.projectDetails}</pre>
     
 
 

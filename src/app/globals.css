@@ -70,7 +70,7 @@
     @apply text-tertiary_color text-[2em] leading-[1.2] md:text-[1.5em] md:leading-[1.3] 2xl:text-[40px] 2xl:leading-[1.4];
   }
   
-  h5 {
+  h5,pre {
     @apply text-tertiary_color text-[1em] leading-[1.4] md:text-[1em] md:leading-[1.5] 2xl:text-[20px] 2xl:leading-[1.6];
   }
   

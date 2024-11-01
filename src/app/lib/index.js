@@ -63,6 +63,9 @@ export const getSingleProject = async (slug) => {
             projectName
             projectStatus
             slug
+             service {
+          serviceName
+        }
             startDate
             endDate
             projectImages {
