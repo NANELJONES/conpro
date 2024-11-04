@@ -23,7 +23,7 @@ const Page = () => {
     const fetchProject = async () => {
       try {
         const fetchedProject = await getSingleProject(slug); // Pass slug dynamically
-        console.log("Fetched project:", fetchedProject); // Check if data is fetched
+        // console.log("Fetched project:", fetchedProject); // Check if data is fetched
         setProject(fetchedProject); // Set the state with fetched data
       } catch (error) {
         console.error("Error fetching project:", error);

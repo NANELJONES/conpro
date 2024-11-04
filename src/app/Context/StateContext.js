@@ -41,7 +41,7 @@ export const StateContext = ({ children }) => {
   const fetchProjects = async () => {
     try {
       const projects = await getProjects();
-      console.log("Fetched projects:", projects); // Check if data is fetched
+      // console.log("Fetched projects:", projects); // Check if data is fetched
       set_all_projects(projects); // Set the state with fetched data
     } catch (error) {
       console.error("Error fetching projects:", error);
@@ -50,7 +50,7 @@ export const StateContext = ({ children }) => {
   const fetchServices = async () => {
     try {
       const temp_services = await getServices();
-      console.log("Fetched Services:", temp_services); // Check if data is fetched
+      // console.log("Fetched Services:", temp_services); // Check if data is fetched
       set_services(temp_services); // Set the state with fetched data
     } catch (error) {
       console.error("Error fetching projects:", error);
@@ -60,7 +60,7 @@ export const StateContext = ({ children }) => {
   const fetchTeam = async () => {
     try {
       const all_teams = await getTeam();
-      console.log("Fetched Team:", all_teams); // Check if data is fetched
+      // console.log("Fetched Team:", all_teams); // Check if data is fetched
       set_team(all_teams); // Set the state with fetched data
     } catch (error) {
       console.error("Error fetching projects:", error);
@@ -71,7 +71,7 @@ export const StateContext = ({ children }) => {
   const fetchTestimonials  = async () => {
     try {
       const all_testimonials = await getTestimonials();
-      console.log("Fetched Team:", all_testimonials); // Check if data is fetched
+      // console.log("Fetched Team:", all_testimonials); // Check if data is fetched
       set_testimonials(all_testimonials); // Set the state with fetched data
     } catch (error) {
       console.error("Error fetching projects:", error);

@@ -7,7 +7,7 @@ const TextAnimation = (props) => {
 
   // Split by spaces and commas (any amount of whitespace or commas)
   const textArray = props.text.split("");
-  console.log(textArray)
+  // console.log(textArray)
 
   return (
     <div className="flex w-full">
